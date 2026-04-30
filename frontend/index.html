@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laundry Order Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧺 Laundry Order System</h1>
+
+        <p>Create and manage laundry orders easily</p>
+
+        <!-- Customer Info -->
+        <input type="text" id="name" placeholder="Customer Name">
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <!-- Item Selection -->
+        <select id="type">
+            <option value="Shirt">Shirt</option>
+            <option value="Pants">Pants</option>
+            <option value="Saree">Saree</option>
+        </select>
+
+        <input type="number" id="qty" placeholder="Quantity">
+
+        <!-- Button -->
+        <button onclick="createOrder()">Create Order</button>
+
+        <!-- Result -->
+        <h3 id="result"></h3>
+
+        <hr>
+
+        <h2>📦 Orders Dashboard</h2>
+        <button onclick="getOrders()">Load Orders</button>
+
+        <div id="orders"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
